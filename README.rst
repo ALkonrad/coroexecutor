@@ -196,7 +196,7 @@ Generally, there are these kinds of error situations:
   executor must NOT be shut down
 
 Consider the previous example using aiohttp to fetch URLs: inside
-the ``fetch()`` function, we're handling ``Exception``, which
+the ``fetch()`` function, we're handling ``BaseExeption``, which
 includes ``asyncio.CancelledError``. In general, this is the
 correct thing to do because you can control what happens in
 each of the scenarios presented above. But what happens
